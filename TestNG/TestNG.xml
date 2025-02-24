@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Home">
+
+    <test name="HuLoop" parallel="methods">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="com.huloop.automation.HomePageTest">
+            <methods>
+                <include name="verifyHomePageMainNavigationTabs"/>
+            </methods>
+            </class>
+        </classes>
+
+    </test>
+</suite>
