@@ -21,8 +21,11 @@ public class HomePageTest extends MSBaseTest {
     public void verifyHomePageMainNavigationTabs() {
         //Step 1: Open Home page
         HomePageImpl homePageImp = new HomePageImpl(driver);
+        // Select Logo
+        homePageImp.selectLogo();
         // Verify if on Home page is displayed
         Assert.assertTrue(homePageImp.isOnHomePage(), "Unable to go to the Home page.");
+        // Verify if Logo is displayed
         Assert.assertTrue(homePageImp.isLogoDisplayed(), "Unable to verify Logo on Home page.");
         // Step 2: Verify Main Navigation Company Tab is displayed
         Assert.assertTrue(homePageImp.isCompanyTabDisplayed(), "Unable to verify Navigation Company Tab.");

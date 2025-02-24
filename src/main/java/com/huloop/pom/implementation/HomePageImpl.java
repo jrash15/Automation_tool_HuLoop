@@ -154,6 +154,13 @@ public class HomePageImpl extends MSBasePage implements HomePage {
     }
 
     @Override
+    public void selectLogo() {
+        LOGGER.info("Selecting Logo...");
+        WebElement companyTab = driver.findElement(By.id("site-logo"));
+        companyTab.click();
+    }
+
+    @Override
     public void selectCompanyTab() {
         LOGGER.info("Selecting Navigation Company Tab...");
         WebElement companyTab = driver.findElement(By.id("menu-item-606"));

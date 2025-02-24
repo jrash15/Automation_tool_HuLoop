@@ -11,6 +11,7 @@ public interface HomePage {
     boolean isPartnersTabDisplayed();
     boolean isContactUsTabDisplayed();
     boolean isRequestDemoButtonDisplayed();
+    void selectLogo();
     void selectCompanyTab();
     void selectProductTab();
     void selectSolutionTab();
