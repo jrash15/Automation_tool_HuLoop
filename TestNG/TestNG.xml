@@ -8,6 +8,7 @@
             <class name="com.huloop.automation.HomePageTest">
             <methods>
                 <include name="verifyHomePageMainNavigationTabs"/>
+                <include name="verifyHomePageMainNavigationTabsFunction"/>
             </methods>
             </class>
         </classes>
